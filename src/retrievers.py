@@ -1,13 +1,9 @@
 from pathlib import Path
 from langchain_community.vectorstores import FAISS
-
 from src.embeddings import get_embeddings
 
-# Project root directory
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 FAISS_DIR = BASE_DIR / "faiss_indexes"
-
 
 def load_retrievers():
 
